@@ -23,7 +23,6 @@ var m map[string]int
 Map types are reference types, like pointers or slices, and so the value of m above is nil; it doesn't point to an initialized map. A nil map behaves like an empty map when reading, but attempts to write to a nil map will cause a runtime panic; don't do that. To initialize a map, use the built in make function:
 
 m = make(map[string]int)
-
 ```
 - use `delete(m, key)` to delete a key
 - both `slices` and `maps` are accessed by reference (a pointer) - if you point a variable at one and change it, the original changes too.
